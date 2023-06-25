@@ -70,7 +70,3 @@ This guide provides concise instructions to clone, setup, and run the project. T
 19. Type
 
 These instructions assume you are using the default port 8000 for the development server. If you're using a different port, adjust the URL accordingly.
-
-Save these instructions in a Markdown (`.md`) file for easy reference.
-
-Enjoy working with your Django DRF project and exploring the Swagger documentation!

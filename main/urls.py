@@ -1,28 +1,3 @@
-# from django.urls import include, path
-# # from djoser import views as djoser_views
-# from rest_framework_simplejwt.views import (
-#     TokenObtainPairView,
-#     TokenRefreshView,
-#     TokenVerifyView,
-# )
-# from api.views.restauant import RestaurantDetailAPIView, RestaurantListAPIView
-
-
-# from api.views.user import UserViewSet
-# urlpatterns = [
-#     path('api/users/', UserViewSet.as_view({'get': 'list', 'post': 'create'}), name='user-list'),
-#     path('api/users/<int:pk>/', UserViewSet.as_view({'get': 'retrieve', 'put': 'update', 'delete': 'destroy'}), name='user-detail'),
-    
-#     # Simple JWT URLs
-#     path('api/token/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-#     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-#     path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
-
-#     # Restaurants
-#     path('api/restaurants/', RestaurantListAPIView.as_view(), name='restaurant-list'),
-#     path('api/restaurants/<int:pk>/', RestaurantDetailAPIView.as_view(), name='restaurant-detail'),
-# ]
-
 
 from django.urls import include, path
 from rest_framework_simplejwt.views import (
@@ -99,5 +74,5 @@ urlpatterns = [
     
 
     # Swagger Documentation
-    path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('api/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]

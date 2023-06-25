@@ -4,6 +4,7 @@ from rest_framework.generics import RetrieveAPIView, RetrieveUpdateAPIView
 from rest_framework.generics import RetrieveUpdateDestroyAPIView as RUD
 from rest_framework.generics import UpdateAPIView
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 
 from api.models import Restaurant
 from api.serializers import RestaurantSerializer
@@ -27,6 +28,7 @@ class RestaurantDetailAPIView(RUD):
     """
     queryset = Restaurant.objects.all()
     serializer_class = RestaurantSerializer
+    permission_classes = [IsAuthenticated]
 
 
 
