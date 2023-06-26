@@ -9,7 +9,7 @@ djoser = "2.2.0"
 pillow = "9.5.0"
 djangorestframework = "3.14.0"
 djangorestframework-simplejwt = "5.2.2"
-drf-yasg = "1.21.6"
+drf-yasg = "*"
 
 [dev-packages]
 
