@@ -1,9 +1,9 @@
 from rest_framework.permissions import BasePermission, IsAuthenticated, AllowAny
 
-RESTAURANT_MANAGER_ROLE = 'restaurant_manager'
-DELIVERY_AGENT_ROLE = 'delivery_agent'
-ADMIN_ROLE = 'admin'
-CUSTOMER_ROLE = 'customer'
+RESTAURANT_MANAGER_ROLE = "RESTAURANT_MANAGER"
+DELIVERY_AGENT_ROLE = "DELIVERY_AGENT"
+ADMIN_ROLE = "ADMIN"
+CUSTOMER_ROLE = "CUSTOMER"
 
 Roles = [RESTAURANT_MANAGER_ROLE, DELIVERY_AGENT_ROLE, ADMIN_ROLE, CUSTOMER_ROLE]
 
